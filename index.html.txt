@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejas Surve | Personal Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      margin: 0.3rem 0;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0056b3;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .achievements img {
+      width: 160px;
+      height: auto;
+      border: 2px solid #0056b3;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    .links a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #0056b3;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .skills ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .skills li {
+      background: #0056b3;
+      color: white;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin: 0.3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Tejas Surve</h1>
+    <p>Welcome to my Personal Portfolio</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I’m Tejas Surve, an Electronics and Telecommunication Engineering student passionate about robotics, embedded systems, IoT, and wireless communication. I love participating in competitions, exploring technology, and continuous learning. I'm also an active IEEE Member.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills & Interests</h2>
+    <ul>
+      <li>Embedded Systems</li>
+      <li>IoT & Wireless Communication</li>
+      <li>MATLAB & Circuit Design</li>
+      <li>Technical Competitions</li>
+      <li>Teamwork & Leadership</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Achievements</h2>
+    <div class="achievements">
+      <a href="certificates/1.amity.jpg" target="_blank"><img src="certificates/1.amity.jpg" alt="Amity UDAAN 2022"></a>
+      <a href="certificates/1.msbte comp.jpg" target="_blank"><img src="certificates/1.msbte comp.jpg" alt="MSBTE Competition"></a>
+      <a href="certificates/1.msbte exam.jpg" target="_blank"><img src="certificates/1.msbte exam.jpg" alt="MSBTE Exam Topper"></a>
+      <a href="certificates/1.SIGHGAD.jpg" target="_blank"><img src="certificates/1.SIGHGAD.jpg" alt="Sparkle 23"></a>
+      <a href="certificates/2.inova.jpg" target="_blank"><img src="certificates/2.inova.jpg" alt="Techno Innova"></a>
+      <a href="certificates/2.aissms.jpg" target="_blank"><img src="certificates/2.aissms.jpg" alt="Technovision 2023"></a>
+      <a href="certificates/3.APCOER.jpg" target="_blank"><img src="certificates/3.APCOER.jpg" alt="Technothon 2023"></a>
+    </div>
+  </section>
+
+  <section class="links">
+    <h2>Links</h2>
+    <a href="https://www.linkedin.com/in/tejas-surve-089365370" target="_blank">LinkedIn Profile</a>
+    |
+    <a href="https://drive.google.com/drive/folders/1EnT2hUBnR_B1HrVqV3Yr4nBwvX46quqt" target="_blank">Certificates Folder (Drive)</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Tejas Surve. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
