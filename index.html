@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tejas Surve | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0e7ff, #fef9ff);
+      color: #111;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      animation: fadeSlideDown 1.2s ease;
+    }
+    @keyframes fadeSlideDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    h1 { font-size: 2.8rem; margin: 0; }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      animation: fadeUp 1.2s ease;
+    }
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      border-left: 5px solid #4e54c8;
+      padding-left: 15px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .certificates img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .certificates img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    .resume, .links {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .resume a, .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 28px;
+      background: #4e54c8;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .resume a:hover, .links a:hover {
+      background: #3b43b1;
+      transform: translateY(-2px);
+    }
+    footer {
+      background: #2f2f2f;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+    @media(max-width: 600px) {
+      h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tejas Surve</h1>
+    <p>Electronics & Telecommunication Engineer | Embedded Systems | Robotics | Data Analytics</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Tejas, a dedicated E&TC student from Pune with a passion for innovation and learning.
+      I've worked on Embedded Systems, Wireless Communication, and IoT Projects. 
+      I'm an active IEEE member, with internship experience as a Jr. Programmer and Control Engineer.
+    </p>
+  </section>
+
+  <section>
+    <h2>Achievements</h2>
+    <div class="certificates">
+      <img src="certificates/cert1.jpg" alt="Amity Udaan 2022">
+      <img src="certificates/cert2.jpg" alt="MSBTE Competition">
+      <img src="certificates/cert3.jpg" alt="MSBTE Exam Topper">
+      <img src="certificates/cert4.jpg" alt="Sparkle 23">
+      <img src="certificates/cert5.jpg" alt="Technovision 2023">
+      <img src="certificates/cert6.jpg" alt="Techno Innova">
+      <img src="certificates/cert7.jpg" alt="Technothon 2023">
+    </div>
+  </section>
+
+  <section class="resume">
+    <h2>My Resume</h2>
+    <a href="resume_tejas_surve (1).pdf" target="_blank">Download Resume (PDF)</a>
+  </section>
+
+  <section class="links">
+    <h2>Connect with Me</h2>
+    <a href="https://www.linkedin.com/in/tejas-surve-089365370" target="_blank">LinkedIn</a>
+    <a href="https://drive.google.com/drive/folders/1EnT2hUBnR_B1HrVqV3Yr4nBwvX46quqt" target="_blank">Certificates</a>
+    <a href="mailto:tejas.surve@example.com">Email Me</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Tejas Surve — Built with 💻 & ☕
+  </footer>
+
+</body>
+</html>
