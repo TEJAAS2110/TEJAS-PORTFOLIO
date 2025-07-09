@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejas Surve | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f8f9fc, #e6ecff);
+      color: #222;
+      scroll-behavior: smooth;
+      transition: all 0.3s ease;
+    }
+    header {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      animation: slideInDown 1s ease-in-out;
+      position: relative;
+    }
+    nav {
+      background: #2c2c54;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      margin: 0 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f9ca24;
+    }
+    header img.banner {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    header img.profile-pic {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    @keyframes slideInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 { margin-bottom: 10px; font-size: 2.8rem; letter-spacing: 1px; }
+    h1 span.typed { color: #f9ca24; }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      border-left: 5px solid #4e54c8;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 1.8rem;
+    }
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      animation: fadeInUp 1.5s ease;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .certificates img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+    .certificates img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .resume, .projects {
+      text-align: center;
+    }
+    .resume a, .projects a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #4e54c8;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: background 0.3s, transform 0.3s;
+    }
+    .resume a:hover, .projects a:hover {
+      background: #3e44b0;
+      transform: translateY(-2px);
+    }
+    .links {
+      text-align: center;
+      margin-top: 40px;
+      animation: fadeInUp 1.2s ease;
+    }
+    .links a {
+      margin: 0 15px;
+      color: #4e54c8;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+    .links a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #4e54c8;
+      transition: width 0.3s;
+    }
+    .links a:hover::after {
+      width: 100%;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #2b2b2b;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      display: block;
+      max-width: 90%;
+      max-height: 90%;
+      margin: 5% auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#links">Links</a>
+  </nav>
+
+  <header>
+    <h1>Tejas Surve<br><span class="typed"></span></h1>
+    <img class="profile-pic" src="profile.jpg" alt="Tejas Surve Photo">
+    <img class="banner" src="banner.jpg" alt="Portfolio Banner">
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate and curious student currently pursuing a degree in Electronics & Telecommunication Engineering.
+      I enjoy working on real-world tech like Embedded Systems, IoT, Wireless Communication, and Data Analytics.
+      My learning is hands-on and challenge-driven. I’ve interned in roles like Jr. Programmer, Control Engineer, and C/C++ Developer.
+      I’m actively looking for internship or project opportunities to contribute and grow.
+    </p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="certificates">
+      <img src="certificates/cert1.jpg" alt="Certificate 1" onclick="zoomImage(this.src)">
+      <img src="certificates/cert2.jpg" alt="Certificate 2" onclick="zoomImage(this.src)">
+      <img src="certificates/cert3.jpg" alt="Certificate 3" onclick="zoomImage(this.src)">
+      <img src="certificates/cert4.jpg" alt="Certificate 4" onclick="zoomImage(this.src)">
+      <img src="certificates/cert5.jpg" alt="Certificate 5" onclick="zoomImage(this.src)">
+      <img src="certificates/cert6.jpg" alt="Certificate 6" onclick="zoomImage(this.src)">
+      <img src="certificates/cert7.jpg" alt="Certificate 7" onclick="zoomImage(this.src)">
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <p>Project showcase coming soon. This section will feature your best works with links, images, and GitHub repositories.</p>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>My Resume</h2>
+    <a href="resume_tejas_surve%20(1).pdf" target="_blank">Download Resume (PDF)</a>
+  </section>
+
+  <section id="links" class="links">
+    <h2>Links</h2>
+    <a href="https://www.linkedin.com/in/tejas-surve-089365370" target="_blank">LinkedIn Profile</a>
+    <a href="https://drive.google.com/drive/folders/1EnT2hUBnR_B1HrVqV3Yr4nBwvX46quqt" target="_blank">Certificates (Drive)</a>
+    <a href="https://tejaas2110.github.io/TEJAS-PORTFOLIO/" target="_blank">Live Portfolio</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Tejas Surve. Designed with passion and purpose.
+  </footer>
+
+  <div class="modal" id="zoomModal" onclick="this.style.display='none'">
+    <img class="modal-content" id="zoomImage">
+  </div>
+
+  <script>
+    function zoomImage(src) {
+      const modal = document.getElementById('zoomModal');
+      const image = document.getElementById('zoomImage');
+      image.src = src;
+      modal.style.display = 'block';
+    }
+
+    const typed = new Typed('.typed', {
+      strings: ["Engineer", "Embedded Developer", "Data Analyst", "Tech Enthusiast"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+</body>
+</html>
