@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejas Surve | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f8f9fc, #e6ecff);
+      color: #222;
+      scroll-behavior: smooth;
+      transition: all 0.3s ease;
+    }
+    header {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      animation: slideInDown 1s ease-in-out;
+      position: relative;
+    }
+    header img.banner {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    @keyframes slideInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      border-left: 5px solid #4e54c8;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 1.8rem;
+    }
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      animation: fadeInUp 1.5s ease;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .certificates img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .certificates img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .resume {
+      text-align: center;
+    }
+    .resume a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #4e54c8;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: background 0.3s, transform 0.3s;
+    }
+    .resume a:hover {
+      background: #3e44b0;
+      transform: translateY(-2px);
+    }
+    .links {
+      text-align: center;
+      margin-top: 40px;
+      animation: fadeInUp 1.2s ease;
+    }
+    .links a {
+      margin: 0 15px;
+      color: #4e54c8;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+    .links a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #4e54c8;
+      transition: width 0.3s;
+    }
+    .links a:hover::after {
+      width: 100%;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #2b2b2b;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tejas Surve</h1>
+    <p>Electronics & Telecommunication Engineer | Embedded Systems | Data Analytics | Robotics</p>
+    <img class="banner" src="banner.jpg" alt="Portfolio Banner">
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate and curious student currently pursuing a degree in Electronics & Telecommunication Engineering. 
+      I enjoy working on real-world tech like Embedded Systems, IoT, Wireless Communication, and Data Analytics. 
+      My learning is hands-on and challenge-driven. I’ve interned in roles like Jr. Programmer, Control Engineer, and C/C++ Developer. 
+      I’m actively looking for internship or project opportunities to contribute and grow.
+    </p>
+  </section>
+
+  <section>
+    <h2>Achievements</h2>
+    <div class="certificates">
+      <img src="certificates/cert1.jpg" alt="Certificate 1">
+      <img src="certificates/cert2.jpg" alt="Certificate 2">
+      <img src="certificates/cert3.jpg" alt="Certificate 3">
+      <img src="certificates/cert4.jpg" alt="Certificate 4">
+      <img src="certificates/cert5.jpg" alt="Certificate 5">
+      <img src="certificates/cert6.jpg" alt="Certificate 6">
+      <img src="certificates/cert7.jpg" alt="Certificate 7">
+    </div>
+  </section>
+
+  <section class="resume">
+    <h2>My Resume</h2>
+    <a href="resume_tejas_surve%20(1).pdf" target="_blank">Download Resume (PDF)</a>
+  </section>
+
+  <section class="links">
+    <h2>Links</h2>
+    <a href="https://www.linkedin.com/in/tejas-surve-089365370" target="_blank">LinkedIn Profile</a>
+    <a href="https://drive.google.com/drive/folders/1EnT2hUBnR_B1HrVqV3Yr4nBwvX46quqt" target="_blank">Certificates (Drive)</a>
+    <a href="https://tejaas2110.github.io/TEJAS-PORTFOLIO/" target="_blank">Live Portfolio</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Tejas Surve. Designed with passion and purpose.
+  </footer>
+
+</body>
+</html>
